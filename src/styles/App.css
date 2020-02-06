@@ -3,5 +3,19 @@ body {
 }
 
 .menu {
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
+}
+
+.ui.vertical.menu {
+  width: auto;
+}
+
+.ui.vertical.menu .item:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.ui.vertical.menu .search:hover {
+  cursor: inherit;
+  background-color: inherit;
 }
