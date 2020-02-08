@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Input, Menu } from "semantic-ui-react";
 
 class Filter extends React.Component {
