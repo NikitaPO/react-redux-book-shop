@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Card, Grid } from "semantic-ui-react";
-import Menu from "./Menu";
 import BookCard from "./BookCard";
+import Menu from "../containers/Menu";
 import Filter from "../containers/Filter";
 
 export default class App extends React.Component {
