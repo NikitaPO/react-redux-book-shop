@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 import createStore from "./store";
 import "./styles/index.css";
 
+//TODO: добавить анимацию книг при наведении
+
 const store = createStore();
 
 ReactDOM.render(

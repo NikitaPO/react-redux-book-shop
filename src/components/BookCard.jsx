@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
 
 const BookCard = ({ title, author, price, image }) => (
-  <Card>
+  <Card className="book_card">
     <Image src={image} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{title}</Card.Header>

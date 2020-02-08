@@ -1,4 +1,4 @@
-export const setFilter = activeFilterItemName => ({
+export const setFilter = filterBy => ({
   type: "SET_FILTER",
-  payload: activeFilterItemName
+  payload: filterBy
 });

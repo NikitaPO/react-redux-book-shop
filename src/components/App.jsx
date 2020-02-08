@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Card, Grid } from "semantic-ui-react";
 import Menu from "./Menu";
 import BookCard from "./BookCard";
-import Filter from "./Filter";
+import Filter from "../containers/Filter";
 
 export default class App extends React.Component {
   UNSAFE_componentWillMount() {
@@ -13,7 +13,8 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { books, isReady, setFilter, activeFilterItem } = this.props;
+    const { books, isReady, setFilter, filterBy } = this.props;
+    console.log(filterBy);
 
     return (
       <Container>
@@ -29,7 +30,7 @@ export default class App extends React.Component {
             </Card.Group>
           </Grid.Column>
           <Grid.Column width={4}>
-            <Filter setFilter={setFilter} activeFilterItem={activeFilterItem} />
+            <Filter setFilter={setFilter} filterBy={filterBy} />
           </Grid.Column>
         </Grid>
       </Container>
