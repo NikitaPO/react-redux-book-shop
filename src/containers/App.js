@@ -21,8 +21,8 @@ const sortBy = (books, filterBy) => {
   }
 };
 
-const mapStateToProps = ({ books }) => ({
-  books: sortBy(books.items, books.filterBy),
+const mapStateToProps = ({ books, filter }) => ({
+  books: sortBy(books.items, filter.filterBy),
   isReady: books.isReady
 });
 

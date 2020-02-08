@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import createStore from "./store";
 import "./styles/index.css";
 
-//TODO: добавить анимацию книг при наведении
+//TODO: добавить 3d анимацию карточек при наведении с описанием на обратной стороне
 //TODO: onRate - менять рейтинг в state при его изменении
 
 const store = createStore();
