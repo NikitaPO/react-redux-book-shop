@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Icon, Image } from "semantic-ui-react";
+import { Rating } from "semantic-ui-react";
 
-const BookCard = ({ title, author, price, image }) => (
+const BookCard = ({ id, title, author, price, image, rating }) => (
   <Card className="book_card">
     <Image src={image} wrapped ui={false} />
     <Card.Content>
@@ -10,11 +11,18 @@ const BookCard = ({ title, author, price, image }) => (
         <span className="date">{author}</span>
       </Card.Meta>
     </Card.Content>
-    <Card.Content extra>
-      <span>
+    <Card.Content extra className="card_values">
+      <div>
         <Icon name="rub" />
         {price}
-      </span>
+      </div>
+      <Rating
+        key={id}
+        icon="star"
+        className="card_rating"
+        defaultRating={rating}
+        maxRating={5}
+      />
     </Card.Content>
   </Card>
 );

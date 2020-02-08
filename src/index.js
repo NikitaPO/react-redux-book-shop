@@ -6,6 +6,7 @@ import createStore from "./store";
 import "./styles/index.css";
 
 //TODO: добавить анимацию книг при наведении
+//TODO: onRate - менять рейтинг в state при его изменении
 
 const store = createStore();
 

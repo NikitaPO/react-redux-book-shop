@@ -14,7 +14,6 @@ export default class App extends React.Component {
 
   render() {
     const { books, isReady, setFilter, filterBy } = this.props;
-    console.log(filterBy);
 
     return (
       <Container>

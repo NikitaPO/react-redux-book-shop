@@ -19,3 +19,17 @@ body {
   cursor: inherit;
   background-color: inherit;
 }
+.card .card_values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ui.card > .content:after,
+.ui.cards > .card > .content:after {
+  content: none;
+}
+
+.ui.rating i {
+  outline: none;
+}
