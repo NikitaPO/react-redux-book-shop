@@ -16,7 +16,6 @@
     "babel-loader": "8.0.6",
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-preset-react-app": "^9.1.1",
-    "bootstrap": "^4.4.1",
     "camelcase": "^5.3.1",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "cra-template": "1.0.1",
@@ -147,6 +146,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "redux-devtools-extension": "^2.13.8"
   }
 }
