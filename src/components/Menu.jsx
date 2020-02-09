@@ -1,7 +1,8 @@
 import React from "react";
-import { Menu, Popup, Icon } from "semantic-ui-react";
+import { Menu, Popup, Button, Icon } from "semantic-ui-react";
+import Cart from "../containers/Cart";
 
-const MenuComponent = ({ totalPrice, count }) => (
+const MenuComponent = ({ totalPrice, count, cart }) => (
   <Menu>
     <Menu.Item name="browse">
       <b>B</b>ooker
@@ -14,13 +15,16 @@ const MenuComponent = ({ totalPrice, count }) => (
       <Popup
         trigger={
           <Menu.Item className="cart">
-            <div>
-              Корзина (<b>{count}</b>)
-            </div>{" "}
+            <Button animated="vertical" className="cart_button">
+              <Button.Content hidden>Корзина:</Button.Content>
+              <Button.Content visible>
+                <Icon name="shop" />(<b>{count}</b>)
+              </Button.Content>
+            </Button>
           </Menu.Item>
         }
         on="click"
-        content={123}
+        content={<Cart cart={cart}/>}
         position="bottom center"
       />
     </Menu.Menu>

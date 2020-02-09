@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Card, Grid } from "semantic-ui-react";
-import BookCard from "./BookCard";
+import BookCard from "../containers/BookCard";
 import Menu from "../containers/Menu";
 import Filter from "../containers/Filter";
 
