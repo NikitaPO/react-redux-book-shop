@@ -1,1 +1,1 @@
-React + Redux boook shop
+React + Redux book shop
